@@ -1,0 +1,232 @@
+<html>
+  <head>
+  <link rel="SHORTCUT ICON" href="http://mag-atlas.ucoz.org/favicon.ico">
+  <meta charset="utf-8" />
+  <title>Квадрат Форда</title>   
+
+<script type="text/javascript">
+
+
+addEventListener("keydown", function(event) {
+    if (event.keyCode == 13)
+      trans();
+   });
+
+
+  function trans(){
+      
+      var word= document.a.b.value;
+      word = word.toUpperCase();
+      var letters = new Array();
+      var translation = new Array();
+                  
+        if(word==""){
+        
+        } else{
+
+            
+        for(var i = 0; i < word.length; i++) {
+        letters[i] = word[i];
+        if (document.a.s.value == "s1"){
+
+        switch (letters[i]){
+          case "А": translation[i] = "<img src=\"https://upload.wikimedia.org/wikipedia/commons/3/35/Runic_letter_ansuz.png\" width=\"20\" height=\"30\">"; break;
+          case "Б": translation[i] = "<img src=\"https://upload.wikimedia.org/wikipedia/commons/c/ca/Runic_letter_berkanan.png\" width=\"20\" height=\"30\">"; break;
+          case "В": translation[i] = "<img src=\"https://upload.wikimedia.org/wikipedia/commons/3/3f/Runic_letter_wunjo.png\" width=\"20\" height=\"30\">"; break;
+          case "Г": translation[i] = "<img src=\"https://upload.wikimedia.org/wikipedia/commons/2/23/Runic_letter_gebo.png\" width=\"20\" height=\"30\">"; break;
+          case "Д": translation[i] = "<img src=\"https://upload.wikimedia.org/wikipedia/commons/c/c6/Runic_letter_dagaz.png\" width=\"20\" height=\"30\">"; break;
+          case "Е": translation[i] = "<img src=\"https://upload.wikimedia.org/wikipedia/commons/3/3e/Runic_letter_iwaz.png\" width=\"20\" height=\"30\">"; break;
+          case "Ё": translation[i] = "<img src=\"https://upload.wikimedia.org/wikipedia/commons/3/3e/Runic_letter_iwaz.png\" width=\"20\" height=\"30\">"; break;
+          case "Ж": translation[i] = "<img src=\"https://upload.wikimedia.org/wikipedia/commons/2/2e/Runic_letter_ehwaz.png\" width=\"20\" height=\"30\">"; break;
+          case "З": translation[i] = "<img src=\"https://upload.wikimedia.org/wikipedia/commons/1/14/Runic_letter_algiz.png\" width=\"20\" height=\"30\">"; break;
+          case "И": translation[i] = "<img src=\"https://upload.wikimedia.org/wikipedia/commons/b/bc/Runic_letter_isaz.png\" width=\"20\" height=\"30\">"; break;
+          case "Й": translation[i] = "<img src=\"https://upload.wikimedia.org/wikipedia/commons/b/bc/Runic_letter_isaz.png\" width=\"20\" height=\"30\">"; break;
+          case "К": translation[i] = "<img src=\"https://upload.wikimedia.org/wikipedia/commons/a/a3/Runic_letter_kauna.png\" width=\"20\" height=\"30\">"; break;
+          case "Л": translation[i] = "<img src=\"https://upload.wikimedia.org/wikipedia/commons/a/a9/Runic_letter_laukaz.png\" width=\"20\" height=\"30\">"; break;
+          case "М": translation[i] = "<img src=\"https://upload.wikimedia.org/wikipedia/commons/0/0c/Runic_letter_mannaz.png\" width=\"20\" height=\"30\">"; break;
+          case "Н": translation[i] = "<img src=\"https://upload.wikimedia.org/wikipedia/commons/b/b9/Runic_letter_naudiz.png\" width=\"20\" height=\"30\">"; break;
+          case "О": translation[i] = "<img src=\"https://upload.wikimedia.org/wikipedia/commons/1/16/Runic_letter_othalan.png\" width=\"20\" height=\"30\">"; break;
+          case "П": translation[i] = "<img src=\"https://upload.wikimedia.org/wikipedia/commons/b/bf/Runic_letter_pertho.png\" width=\"20\" height=\"30\">"; break;
+          case "Р": translation[i] = "<img src=\"https://upload.wikimedia.org/wikipedia/commons/c/cf/Runic_letter_raido.png\" width=\"20\" height=\"30\">"; break;
+          case "С": translation[i] = "<img src=\"https://upload.wikimedia.org/wikipedia/commons/4/44/Runic_letter_sowilo_variant.png\" width=\"20\" height=\"30\">"; break;
+          case "Т": translation[i] = "<img src=\"https://upload.wikimedia.org/wikipedia/commons/a/a3/Runic_letter_tiwaz.png\" width=\"20\" height=\"30\">"; break;
+          case "У": translation[i] = "<img src=\"https://upload.wikimedia.org/wikipedia/commons/8/8e/Runic_letter_uruz.png\" width=\"20\" height=\"30\">"; break;
+          case "Ф": translation[i] = "<img src=\"https://upload.wikimedia.org/wikipedia/commons/0/07/Runic_letter_fehu.png\" width=\"20\" height=\"30\">"; break;
+          case "Х": translation[i] = "<img src=\"https://upload.wikimedia.org/wikipedia/commons/2/25/Runic_letter_haglaz.png\" width=\"20\" height=\"30\">"; break;
+          case "Ц": translation[i] = "<img src=\"https://upload.wikimedia.org/wikipedia/commons/6/6d/Runic_letter_ingwaz.png\" width=\"20\" height=\"30\">"; break;
+          case "Ч": translation[i] = "<img src=\"https://upload.wikimedia.org/wikipedia/commons/6/6d/Runic_letter_ingwaz.png\" width=\"20\" height=\"30\">"; break;
+          case "Ш": translation[i] = "<img src=\"https://upload.wikimedia.org/wikipedia/commons/c/c6/Runic_letter_dagaz.png\" width=\"20\" height=\"30\">"; break;
+          case "Щ": translation[i] = "<img src=\"https://upload.wikimedia.org/wikipedia/commons/c/c6/Runic_letter_dagaz.png\" width=\"20\" height=\"30\">"; break;
+          case "Ъ": translation[i] = ""; break;
+          case "Ы": translation[i] = "<img src=\"https://upload.wikimedia.org/wikipedia/commons/b/bc/Runic_letter_isaz.png\" width=\"20\" height=\"30\">"; break;
+          case "Ь": translation[i] = ""; break;         
+          case "Э": translation[i] = "<img src=\"https://upload.wikimedia.org/wikipedia/commons/3/3e/Runic_letter_iwaz.png\" width=\"20\" height=\"30\">"; break;
+          case "Ю": translation[i] = "<img src=\"https://upload.wikimedia.org/wikipedia/commons/8/8e/Runic_letter_uruz.png\" width=\"20\" height=\"30\">"; break;
+          case "Я": translation[i] = "<img src=\"https://upload.wikimedia.org/wikipedia/commons/0/01/Runic_letter_jeran.png\" width=\"20\" height=\"30\">"; break;
+          case " ": translation[i] = "<img src=\"http://iridia.ulb.ac.be/~cpinciroli/extra/h-414/two_spots.png\" width=\"20\" height=\"30\">"; break;
+          default: translation[i] = "-";
+          }
+        } else if(document.a.s.value == "s2"){
+            switch (letters[i]){
+              case "A": translation[i] = "<img src=\"https://upload.wikimedia.org/wikipedia/commons/3/35/Runic_letter_ansuz.png\" width=\"20\" height=\"30\">"; break;
+              case "Á": translation[i] = "<img src=\"https://upload.wikimedia.org/wikipedia/commons/3/35/Runic_letter_ansuz.png\" width=\"20\" height=\"30\">"; break;
+              case "B": translation[i] = "<img src=\"https://upload.wikimedia.org/wikipedia/commons/c/ca/Runic_letter_berkanan.png\" width=\"20\" height=\"30\">"; break;
+              case "D": translation[i] = "<img src=\"https://upload.wikimedia.org/wikipedia/commons/c/c6/Runic_letter_dagaz.png\" width=\"20\" height=\"30\">"; break;
+              case "Ð": translation[i] = "<img src=\"https://upload.wikimedia.org/wikipedia/commons/a/a3/Runic_letter_tiwaz.png\" width=\"20\" height=\"30\">"; break;
+              case "E": translation[i] = "<img src=\"https://upload.wikimedia.org/wikipedia/commons/2/2e/Runic_letter_ehwaz.png\" width=\"20\" height=\"30\">"; break;
+              case "É": translation[i] = "<img src=\"https://upload.wikimedia.org/wikipedia/commons/3/3e/Runic_letter_iwaz.png\" width=\"20\" height=\"30\">"; break;
+              case "F": translation[i] = "<img src=\"img src=\"https://upload.wikimedia.org/wikipedia/commons/0/07/Runic_letter_fehu.png\" width=\"20\" height=\"30\">"; break;
+              case "G": translation[i] = "<img src=\"https://upload.wikimedia.org/wikipedia/commons/2/23/Runic_letter_gebo.png\" width=\"20\" height=\"30\">"; break;
+              case "H": translation[i] = "<img src=\"https://upload.wikimedia.org/wikipedia/commons/2/25/Runic_letter_haglaz.png\" width=\"20\" height=\"30\">"; break;
+              case "I": translation[i] = "<img src=\"https://upload.wikimedia.org/wikipedia/commons/b/bc/Runic_letter_isaz.png\" width=\"20\" height=\"30\">"; break;
+              case "Í": translation[i] = "<img src=\"https://upload.wikimedia.org/wikipedia/commons/3/3e/Runic_letter_iwaz.png\" width=\"20\" height=\"30\">"; break;
+              case "J": translation[i] = "<img src=\"https://upload.wikimedia.org/wikipedia/commons/0/01/Runic_letter_jeran.png\" width=\"20\" height=\"30\">"; break;
+              case "K": translation[i] = "<img src=\"https://upload.wikimedia.org/wikipedia/commons/a/a3/Runic_letter_kauna.png\" width=\"20\" height=\"30\">"; break;
+              case "L": translation[i] = "<img src=\"https://upload.wikimedia.org/wikipedia/commons/a/a9/Runic_letter_laukaz.png\" width=\"20\" height=\"30\">"; break;
+              case "M": translation[i] = "<img src=\"https://upload.wikimedia.org/wikipedia/commons/0/0c/Runic_letter_mannaz.png\" width=\"20\" height=\"30\">"; break;
+              case "N": translation[i] = "<img src=\"https://upload.wikimedia.org/wikipedia/commons/b/b9/Runic_letter_naudiz.png\" width=\"20\" height=\"30\">"; break;
+              case "O": translation[i] = "<img src=\"https://upload.wikimedia.org/wikipedia/commons/1/16/Runic_letter_othalan.png\" width=\"20\" height=\"30\">"; break;
+              case "Ó": translation[i] = "<img src=\"https://upload.wikimedia.org/wikipedia/commons/1/16/Runic_letter_othalan.png\" width=\"20\" height=\"30\">"; break;
+              case "P": translation[i] = "<img src=\"https://upload.wikimedia.org/wikipedia/commons/b/bf/Runic_letter_pertho.png\" width=\"20\" height=\"30\">"; break;
+              case "R": translation[i] = "<img src=\"https://upload.wikimedia.org/wikipedia/commons/c/cf/Runic_letter_raido.png\" width=\"20\" height=\"30\">"; break;
+              case "S": translation[i] = "<img src=\"https://upload.wikimedia.org/wikipedia/commons/4/44/Runic_letter_sowilo_variant.png\" width=\"20\" height=\"30\">"; break;
+              case "T": translation[i] = "<img src=\"https://upload.wikimedia.org/wikipedia/commons/a/a3/Runic_letter_tiwaz.png\" width=\"20\" height=\"30\">"; break;
+              case "U": translation[i] = "<img src=\"https://upload.wikimedia.org/wikipedia/commons/8/8e/Runic_letter_uruz.png\" width=\"20\" height=\"30\">"; break;
+              case "Ú": translation[i] = "<img src=\"https://upload.wikimedia.org/wikipedia/commons/8/8e/Runic_letter_uruz.png\" width=\"20\" height=\"30\">"; break;
+              case "V": translation[i] = "<img src=\"https://upload.wikimedia.org/wikipedia/commons/0/07/Runic_letter_fehu.png\" width=\"20\" height=\"30\">"; break;
+              case "X": translation[i] = "<img src=\"https://upload.wikimedia.org/wikipedia/commons/3/3e/Runic_letter_iwaz.png\" width=\"20\" height=\"30\">"; break;
+              case "Y": translation[i] = "<img src=\"https://upload.wikimedia.org/wikipedia/commons/2/23/Runic_letter_gebo.png\" width=\"20\" height=\"30\">"; break;
+              case "Ý": translation[i] = "<img src=\"https://upload.wikimedia.org/wikipedia/commons/2/23/Runic_letter_gebo.png\" width=\"20\" height=\"30\">"; break;
+              case "Þ": translation[i] = "<img src=\"https://upload.wikimedia.org/wikipedia/commons/e/ee/Runic_letter_thurisaz.png\" width=\"20\" height=\"30\">"; break;
+              case "Æ": translation[i] = "<img src=\"https://upload.wikimedia.org/wikipedia/commons/a/a3/Runic_letter_tiwaz.png\" width=\"20\" height=\"30\">"; break;
+              case "Ö": translation[i] = "<img src=\"https://upload.wikimedia.org/wikipedia/commons/1/16/Runic_letter_othalan.png\" width=\"20\" height=\"30\">"; break;
+              case " ": translation[i] = "<img src=\"http://iridia.ulb.ac.be/~cpinciroli/extra/h-414/two_spots.png\" width=\"20\" height=\"30\">"; break;  
+              default: translation[i] = "-";
+
+          }
+        }         
+        
+      }
+      document.getElementById("runes").innerHTML = "";
+      for(var i = 0; i<translation.length; i++){
+      	document.getElementById("runes").innerHTML += translation[i];
+      }
+        
+       
+}
+}
+      
+    </script>
+
+
+
+
+
+  <style>
+  .centerButton {
+        
+    width: 400px;    
+    position: absolute;
+    top: 20px;
+    right: 0;    
+    left: 0;
+    margin: auto;
+    
+    
+
+   }
+  .center {
+    outline: 1px solid #000; 
+    border: 20px solid #fff;
+    
+    width: 350px;    
+    position: absolute;
+    top: 42px;
+    right: 0;    
+    left: 0;
+    margin: auto;
+
+   }
+
+   .blocks {
+
+ display: inline-block;
+
+}
+
+.search {
+    width: 350px; 
+   }
+
+  .inputFroms {
+    width: 350px; 
+    height: 100px;
+
+   }
+
+   .runesSize {
+    width: 4px; 
+    height: 8px;
+
+   }
+   .hide {
+    width: 0px; 
+    height: 0px;
+	visibility: hidden;
+   }
+
+
+  </style>
+  </head>  
+  <body>
+  <div class="centerButton" align="center">
+
+
+	
+   <a href="https://occultist888.github.io/Sigil.html"><button style="font-face: 'Comic Sans MS'; border: 2px solid; border-color: #A9A9A9 #A9A9A9 #A9A9A9; border-radius: 0px; width: 194px; color: white; background-color: #A9A9A9"> Перевод для сигил</button></a>       
+
+
+  	<button style="font-face: 'Comic Sans MS'; border: 2px solid; border-color: #6495ED #6495ED #6495ED; width: 194px; border-radius: 0px;color: white; background-color: #6495ED"> Перевод для рун</button>    
+
+
+ </div>
+
+ 
+<div class="center" align="center">
+<div align="center">
+      <b>Перевод символов в руны</b><p></p>
+      </div>
+      <form name="a">
+<p>  
+      <select  class="search" name="s" onchange="tableTransform(); trans();">
+      <option selected value="s1">Русский</option>
+      <option value="s2">Исландский</option> 
+      
+      </select>
+      
+<p>  
+      <input class="search" name="b" size = "28"  placeholder=" Введите текст для перевода" onblur="this.value=this.value.toUpperCase();">
+      </p>
+      <div class="blocks" align="justify">
+      
+      <input class="search" type = "button" style="font-face: 'Comic Sans MS'; border: 2px solid; border-color: #6495ED #6495ED #6495ED; width: 350px; border-radius: 0px; color: white; background-color: #6495ED" value="Перевести" onclick="trans();">
+      
+      </div>
+      
+            
+      <input  class = "hide" disabled="">
+      
+      </form>
+
+      <div align="justify" id="runes" ></div>
+
+</div>
+
+</div>
+
+
+</div>
+
+
+</body>
+</html>
