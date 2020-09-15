@@ -13,8 +13,12 @@
 
     function foo () {
 
-        /*document.getElementById('Img').src = "http://picsum.photos/1920/1080?random=2";*/
-        location.reload();
+      var n = document.getElementById('Btn').value;
+      
+      document.getElementById('Img').src = "http://picsum.photos/1920/1080?random=" + n;
+      /*alert(document.getElementById('Img').src);*/
+      document.getElementById('Btn').value = Number(document.getElementById('Btn').value) + 1;
+
 
         }
 
@@ -77,8 +81,8 @@
 <body>
     <center>
 
-        <div id="ImgCont"><img id="Img" src="http://picsum.photos/1920/1080?random=1">
-        <button id="Btn" onclick="foo();">Обновить изображение</button></div>
+        <div id="ImgCont"><img id="Img" src="http://picsum.photos/1920/1080?random=0">
+        <button id="Btn" onclick="foo();" value="1">Обновить изображение</button></div>
 
     </center>
 
