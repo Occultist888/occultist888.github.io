@@ -7,7 +7,8 @@
     <script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js'></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
   <script type="text/javascript">
-    function foo () {
+
+    function update () {
       var n = document.getElementById('Btn').value;
       
        document.getElementById('Img').src = "http://picsum.photos/1920/1080?random=" + n;
@@ -15,21 +16,53 @@
        document.getElementById('Btn').value = Number(document.getElementById('Btn').value) + 1;
        document.getElementById('Btn').innerText = "Обновить изображение (" + n +")";
 
-
          }
+
+
+    function coverup (){
+
+        document.getElementById('Cover').style.display = "block";
+
+    }
+
+    function coverdown (){
+
+        document.getElementById('Cover').style.display = "none";
+
+    }
+
+    
   </script>
   <style type="text/css">
       body{
       }
       #ImgCont{
-        width:100%;
-        max-width:980px;
-        height: 550px;
-        /*border: solid black 1px;*/
+        position: relative;
+        width:980px;
+        max-width:100%;
+        padding: 0;
+        margin:0;
+
+
+        
       }
+
+      #Cover{
+          position: absolute; 
+          left:0;
+          right:0;
+          top:0;
+          bottom:0;
+          background: black;
+          z-index:9999;
+          display: none;
+
+      }
+
       #Img{
         width:980px;
         max-width:100%;
+
         
       }
     #Btn {
@@ -49,18 +82,33 @@
         #Btn {
           font-size: 5vw;
         }
+
     }
+
+
     #Btn:hover { background: rgb(53, 167, 110); }
     #Btn:active {
         background: rgb(33,147,90);
         box-shadow: 0 3px rgb(33,147,90) inset;
 }
+
+    
+
+    
+
+      
+    
   </style>
 </head>
 <body>
     <center>
-        <div id="ImgCont"><img id="Img" src="http://picsum.photos/1920/1080?random=0">
-        <button id="Btn" onclick="foo();" value="1">Обновить изображение</button></div>
+        <div id="ImgCont">
+          <div id="Cover" onclick="coverdown();"></div>
+          <img id="Img" src="http://picsum.photos/1920/1080?random=0" onclick="coverup();">
+        </div>
+        <button id="Btn" onclick="update();" value="2">Обновить изображение (1)</button>
+        
+      
     </center>
 </body>
 </html>
