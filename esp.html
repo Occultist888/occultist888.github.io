@@ -9,12 +9,15 @@
   <script type="text/javascript">
 
     function update () {
+
+      document.getElementById('Loadweel').style.display = "block";
+
       var n = document.getElementById('Btn').value;
       
-       document.getElementById('Img').src = "http://picsum.photos/1920/1080?random=" + n;
-       /*alert(document.getElementById('Img').src);*/
-       document.getElementById('Btn').value = Number(document.getElementById('Btn').value) + 1;
-       document.getElementById('Btn').innerText = "Обновить изображение (" + n +")";
+      document.getElementById('Img').src = "http://picsum.photos/1920/1080?random=" + n;
+      /*alert(document.getElementById('Img').src);*/
+      document.getElementById('Btn').value = Number(document.getElementById('Btn').value) + 1;
+      document.getElementById('Btn').innerText = "Обновить изображение (" + n +")";
 
          }
 
@@ -28,6 +31,12 @@
     function coverdown (){
 
         document.getElementById('Cover').style.display = "none";
+
+    }
+
+    function loadingoff (){
+
+        document.getElementById('Loadweel').style.display = "none";
 
     }
 
@@ -48,6 +57,24 @@
         
       }
 
+      #Loadweel{
+
+          margin: 0;
+      
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          margin-right: -50%;
+          transform: translate(-50%, -50%);
+
+          
+          width: 100px;
+          height: 100px;
+          z-index:9999;
+          display: none;
+
+      }
+
       #Cover{
           position: absolute; 
           left:0;
@@ -55,7 +82,7 @@
           top:0;
           bottom:0;
           background: black;
-          z-index:9999;
+          z-index:9998;
           display: none;
 
       }
@@ -107,8 +134,9 @@
 <body>
     <center>
         <div id="ImgCont">
+          <img id="Loadweel" src="loadingwheel.gif">
           <div id="Cover" onclick="coverdown();"></div>
-          <img id="Img" src="http://picsum.photos/1920/1080?random=0" onclick="coverup();">
+          <img id="Img" src="http://picsum.photos/1920/1080?random=0" onclick="coverup();" onload="loadingoff();">
         </div>
         <button id="Btn" onclick="update();" value="2">Обновить изображение (1)</button>
         
