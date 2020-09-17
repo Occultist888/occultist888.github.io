@@ -1,542 +1,117 @@
+<!DOCTYPE html>
 <html>
-  <head>
-  <link rel="SHORTCUT ICON" href="http://mag-atlas.ucoz.org/favicon.ico">
-  <meta charset="utf-8" />
-  <title>Квадрат Форда</title>   
-  <style>
-    .centerButton {
-        
-    width: 400px;    
-    position: absolute;
-    top: 20px;
-    right: 0;    
-    left: 0;
-    margin: auto;
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Курс Рунической Магии</title>
 
-   }
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.6.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
 
-   
-   .center {
-    outline: 1px solid #000; 
-    border: 20px solid #fff;
-    
-    width: 350px;    
-    position: absolute;
-    top: 42px;
-    right: 0;
-    
-    left: 0;
-    margin: auto;
+</head>
 
-   }
+<body>
 
-   .blocks {
- display: inline-block;
-
-}
-  
-
-  .search {
-    width: 350px; 
-   }
-
-  .inputFroms {
-    width: 350px; 
-    height: 100px;
-
-   }
-
-</style>
+	<header>
+		<h2><a class="logo" href="#"><center><img src="Valknut.png" width="100px" height="100px"><p>Occultist.pro</center></a></h2>
+		<nav>
+			<li><a href="#">Главная</a></li>
+			<li><a href="#">Программа</a></li>
+			<li><a href="#">Стоимость</a></li>
+			<li><a href="index.html#bottom">Записаться</a></li>
+		</nav>
+	</header>
 
 
-  <script type="text/javascript">
+	<section class="hero">
+		<div class="background-image" style="background-image: url(assets/img/hero.jpg);"></div>
+		<h1>Курс Рунической Магии</h1>
+		<h3>Обучитесь крайне мощной магии древних скандинавскийх рун страшего футарка</h3>
+		<a href="index.html#bottom" class="btn">Записаться</a>
+	</section>
 
 
-    
-   addEventListener("keydown", function(event) {
-    if (event.keyCode == 13)
-      trans();
-   });
+	<section class="our-work">
+		<h3 class="title">Some of our work</h3>
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam id felis et ipsum bibendum ultrices. Morbi vitae pulvinar velit. Sed aliquam dictum sapien, id sagittis augue malesuada eu.</p>
+		<hr>
 
-    
-    function tableTransform(){
+		<ul class="grid">
+			<li class="small" style="background-image: url(assets/img/coast.jpg);"></li>
+			<li class="large" style="background-image: url(assets/img/island.jpg);"></li>
+			<li class="large" style="background-image: url(assets/img/balloon.jpg);"></li>
+			<li class="small" style="background-image: url(assets/img/mountain.jpg);"></li>
+		</div>
+	</section>
+	
 
+	<section class="features">
+		<h3 class="title">Features and services</h3>
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam id felis et ipsum bibendum ultrices. Morbi vitae pulvinar velit. Sed aliquam dictum sapien, id sagittis augue malesuada eu.</p>
+		<hr>
 
-
-      if (document.a.s.value == "s1"){
-        document.getElementById("t").innerHTML = "<tr><th>1</th><th>4</th><th>7</th></tr><tr><th>2</th><th>5</th><th>8</th></tr><tr><th>3</th><th>6</th><th>9</th></tr></table>";
-        document.getElementById("text").innerHTML ="Квадрат Форда можно использовать для быстрого получения денег либо для медленного, но верного финансового роста."
-      } else if (document.a.s.value == "s2"){
-        document.getElementById("t").innerHTML = "<tr><th>4</th><th>9</th><th>2</th></tr><tr><th>3</th><th>5</th><th>7</th></tr><tr><th>8</th><th>1</th><th>6</th></tr></table>";
-        document.getElementById("text").innerHTML ="Сатурн властвует над дисциплиной, ответственностью, карьерным ростом, консерватизмом, мудростью, старением."
-      } else if (document.a.s.value == "s3"){
-        document.getElementById("t").innerHTML = 
-    "<tr><th>4</th><th>14</th><th>15</th><th>1</th></tr><tr><th>9</th><th>7</th><th>6</th><th>12</th></tr><tr><th>5</th><th>11</th><th>10</th><th>8</th></tr><tr><th>16</th><th>2</th><th>3</th><th>13</th></tr></table>";
-        document.getElementById("text").innerHTML ="Юпитер властвует над богатством, ростом, бизнесом, высшим образованием, удачей."
-      } else if (document.a.s.value == "s4"){
-        document.getElementById("t").innerHTML = "<tr><th>11</th><th>24</th><th>7</th><th>20</th><th>3</th></tr><tr><th>4</th><th>12</th><th>25</th><th>8</th><th>16</th></tr><tr><th>17</th><th>5</th><th>13</th><th>21</th><th>9</th></tr><tr><th>10</th><th>18</th><th>1</th><th>14</th><th>22</th></tr><tr><th>23</th><th>6</th><th>19</th><th>2</th><th>15</th></tr></table>";
-        document.getElementById("text").innerHTML ="Марс властвует над желаниями, динамичными действиями, животной природой, силой, бедствиями, соревнованиями, смертью."
-      } else if (document.a.s.value == "s5"){
-        document.getElementById("t").innerHTML = "<tr><th>6</th><th>32</th><th>3</th><th>34</th><th>35</th><th>1</th></tr><tr><th>7</th><th>11</th><th>27</th><th>28</th><th>8</th><th>30</th></tr><tr><th>19</th><th>14</th><th>16</th><th>15</th><th>23</th><th>24</th></tr><tr><th>18</th><th>20</th><th>22</th><th>21</th><th>17</th><th>13</th></tr><tr><th>25</th><th>29</th><th>10</th><th>9</th><th>26</th><th>12</th></tr><tr><th>36</th><th>5</th><th>33</th><th>4</th><th>2</th><th>31</th></tr></table>"
-        document.getElementById("text").innerHTML ="Солнце властвует над здоровьем, жизненными силами, самореализацией, энергией, властью, детьми."
-      } else if (document.a.s.value == "s6"){
-        document.getElementById("t").innerHTML ="<tr><th>22</th><th>47</th><th>16</th><th>41</th><th>10</th><th>35</th><th>4</th></tr><tr><th>5</th><th>23</th><th>43</th><th>17</th><th>42</th><th>11</th><th>29</th></tr><tr><th>30</th><th>6</th><th>24</th><th>49</th><th>18</th><th>36</th><th>12</th></tr><tr><th>13</th><th>31</th><th>7</th><th>25</th><th>43</th><th>19</th><th>37</th></tr><tr><th>38</th><th>14</th><th>32</th><th>1</th><th>26</th><th>44</th><th>20</th></tr><tr><th>21</th><th>39</th><th>8</th><th>33</th><th>2</th><th>27</th><th>43</th></tr><tr><th>46</th><th>15</th><th>40</th><th>9</th><th>34</th><th>3</th><th>28</th></tr></table>"
-        document.getElementById("text").innerHTML ="Венера властвует над удовольствиями, любовью, привлекательностью, искусством, музыкой, поэзией, драгоценностями, чувствами, браком."
-      } else if (document.a.s.value == "s7"){
-        document.getElementById("t").innerHTML = "<tr><th>8</th><th>58</th><th>59</th><th>5</th><th>4</th><th>62</th><th>63</th><th>1</th></tr><tr><th>49</th><th>15</ th><th>14</th><th>52</th><th>53</th><th>11</th><th>10</th><th>56</th></tr><tr><th>41</th><th>23</th><th>22</th><th>44</th><th>45</th><th>19</th><th>18</th><th>48</th></tr><tr><th>32</th><th>34</th><th>35</th><th>29</th><th>28</th><th>38</th><th>39</th><th>25</th></tr><tr><th>40</th><th>26</th><th>27</th><th>37</ th><th>36</th><th>30</th><th>31</th><th>33</th></tr><tr><th>17</th><th>47</th><th>46</th><th>20</th><th>21</th><th>43</th><th>42</th><th>24</th></tr><tr><th>9</th><th>55</th><th>54</th><th>12</th><th>13</th><th>51</th><th>50</th><th>16</th></tr><tr><th>64</th><th>2</th><th>3</th><th>61</th><th>60</th><th>6</ th><th>7</th><th>57</th></tr></table>"
-        document.getElementById("text").innerHTML ="Меркурий властвует над связью, разумом, интеллектом, рациональностью, ловкостью, речью."
-
-      } else if (document.a.s.value == "s8"){
-        document.getElementById("t").innerHTML = "<tr><th>37</th><th>78</th><th>29</th><th>70</th><th>21</th><th>62</th><th>13</th><th>54</th><th>5</th></tr><tr><th>6</th><th>38</th><th>79</th><th>30</th><th>71</th><th>22</th><th>63</th><th>14</th><th>46</th></tr><tr><th>47</th><th>7</th><th>39</th><th>80</th><th>31</th><th>72</th><th>23</th><th>55</th><th>15</th></tr><tr><th>16</th><th>48</th><th>8</th><th>40</th><th>81</th><th>32</th><th>64</th><th>24</th><th>56</th></tr><tr><th>57</th><th>17</th><th>49</th><th>9</th><th>41</th><th>73</th><th>33</th><th>65</th><th>25</th></tr><tr><th>26</th><th>58</th><th>18</th><th>50</th><th>1</th><th>42</th><th>74</th><th>34</th><th>66</th></tr><tr><th>67</th><th>27</th><th>59</th><th>10</th><th>51</th><th>2</th><th>43</th><th>75</th><th>35</ th></tr><tr><th>36</th><th>68</th><th>19</th><th>60</th><th>11</th><th>52</th><th>3</th><th>44</th><th>76</th></tr><tr><th>77</th><th>28</th><th>69</th><th>20</th><th>61</th><th>12</th><th>53</th><th>4</th><th>43</th></tr></table>"
-        document.getElementById("text").innerHTML ="Луна властвует над инстинктами, привычками, подсознанием, жидкостями, а также над всеми эмоциями."
-        
-  }
-
-}
-    
-    
-    function unique(arr) {
-  var result = [];
-
-  nextInput:
-    for (var i = 0; i < arr.length; i++) {
-      var str = arr[i]; // для каждого элемента
-      for (var j = 0; j < result.length; j++) { // ищем, был ли он уже?
-        if (result[j] == str || str ==" ") continue nextInput; // если да, то следующий
-      }
-
-      result.push(str);
-    }
-
-  return result;
-}
+		<ul class="grid">
+			<li>
+				<i class="fa fa-camera-retro"></i>
+				<h4>Photography</h4>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam id felis et ipsum bibendum ultrices vitae pulvinar velit.</p>
+			</li>
+			<li>
+				<i class="fa fa-cubes"></i>
+				<h4>Web Development</h4>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam id felis et ipsum bibendum ultrices vitae pulvinar velit.</p>
+			</li>
+			<li>
+				<i class="fa fa-newspaper-o"></i>
+				<h4>Content Editing</h4>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam id felis et ipsum bibendum ultrices vitae pulvinar velit.</p>
+			</li>
+		</div>
+	</section>
 
 
+	<section class="reviews">
+		<h3 class="title">What others say:</h3>
 
-    function trans (){
-      
-      var word= document.a.b.value;
-      word = word.toUpperCase();
-      var letters = new Array();
-      var translation = new Array();
-      var shortWord;
+		<p class="quote">Mauris sit amet mauris a arcu eleifend ultricies eget ut dolor. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
+		<p class="author">— Patrick Farrell</p>
 
-      if (!(document.a.check.checked)){ // если -
-        
-      } else {                        // если +
-        
-        word = unique(word);
-        document.a.b.value = word;
-        
-      }
+		<p class="quote">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam id felis et ipsum bibendum ultrices. Morbi vitae pulvinar velit. Sed aliquam dictum sapien, id sagittis augue malesuada eu.</p>
+		<p class="author">— George Smith</p>
 
-      
-        if(word==""){
-        
-        } else{
+		<p class="quote">Donec commodo dolor augue, vitae faucibus tortor tincidunt in. Aliquam vitae leo quis mi pulvinar ornare. Integer eu iaculis metus.</p>
+		<p class="author">— Kevin Blake</p>
 
-        if (document.a.s.value == "s1" || document.a.s.value == "s2" ){ // Форд и Сатурн
-         
-
-        for(var i = 0; i < word.length; i++) {
-        letters[i] = word[i];      
-        switch (letters[i]){
-          case "А": translation[i] = "1"; break;
-          case "Б": translation[i] = "2"; break;
-          case "В": translation[i] = "2"; break;
-          case "Г": translation[i] = "3"; break;
-          case "Д": translation[i] = "4"; break;
-          case "Е": translation[i] = "-"; break;
-          case "Ё": translation[i] = "-"; break;
-          case "Ж": translation[i] = "-"; break;
-          case "З": translation[i] = "7"; break;
-          case "И": translation[i] = "1"; break;
-          case "Й": translation[i] = "1"; break;
-          case "К": translation[i] = "2"; break;
-          case "Л": translation[i] = "3"; break;
-          case "М": translation[i] = "4"; break;
-          case "Н": translation[i] = "5"; break;
-          case "О": translation[i] = "6"; break;
-          case "П": translation[i] = "8"; break;
-          case "Р": translation[i] = "2"; break;
-          case "С": translation[i] = "6"; break;
-          case "Т": translation[i] = "9"; break;
-          case "У": translation[i] = "6"; break;
-          case "Ф": translation[i] = "8"; break;
-          case "Х": translation[i] = "5"; break;
-          case "Ц": translation[i] = "9"; break;
-          case "Ч": translation[i] = "8"; break;
-          case "Ш": translation[i] = "3"; break;
-          case "Щ": translation[i] = "3"; break;
-          case "Ъ": translation[i] = "-"; break;
-          case "Ы": translation[i] = "-"; break;
-          case "Ь": translation[i] = "-"; break;
-          case "Э": translation[i] = "-"; break;
-          case "Ю": translation[i] = "-"; break;
-          case "Я": translation[i] = "-"; break;
-          default: translation[i] = "-";
-        }         
-        
-      }
-        
-        document.getElementById("tf").value = translation;
-
-      } else if (document.a.s.value == "s3"){ // Юпитер
-         
-
-        for(var i = 0; i < word.length; i++) {
-        letters[i] = word[i];      
-        switch (letters[i]){
-          case "А": translation[i] = "1"; break;
-          case "Б": translation[i] = "2"; break;
-          case "В": translation[i] = "2"; break;
-          case "Г": translation[i] = "3"; break;
-          case "Д": translation[i] = "4"; break;
-          case "Е": translation[i] = "-"; break;
-          case "Ё": translation[i] = "-"; break;
-          case "Ж": translation[i] = "-"; break;
-          case "З": translation[i] = "7"; break;
-          case "И": translation[i] = "10"; break;
-          case "Й": translation[i] = "10"; break;
-          case "К": translation[i] = "2"; break;
-          case "Л": translation[i] = "3"; break;
-          case "М": translation[i] = "4"; break;
-          case "Н": translation[i] = "5"; break;
-          case "О": translation[i] = "6"; break;
-          case "П": translation[i] = "8"; break;
-          case "Р": translation[i] = "2"; break;
-          case "С": translation[i] = "6"; break;
-          case "Т": translation[i] = "9"; break;
-          case "У": translation[i] = "6"; break;
-          case "Ф": translation[i] = "8"; break;
-          case "Х": translation[i] = "5"; break;
-          case "Ц": translation[i] = "9"; break;
-          case "Ч": translation[i] = "8"; break;
-          case "Ш": translation[i] = "3"; break;
-          case "Щ": translation[i] = "3"; break;
-          case "Ъ": translation[i] = "-"; break;
-          case "Ы": translation[i] = "-"; break;
-          case "Ь": translation[i] = "-"; break;
-          case "Э": translation[i] = "-"; break;
-          case "Ю": translation[i] = "-"; break;
-          case "Я": translation[i] = "-"; break;
-          default: translation[i] = "-";
-        }         
-        
-      }
-        document.getElementById("tf").value = translation;
-
-      } else if (document.a.s.value == "s4"){ // Марс
-         
-
-        for(var i = 0; i < word.length; i++) {
-        letters[i] = word[i];      
-        switch (letters[i]){
-          case "А": translation[i] = "1"; break;
-          case "Б": translation[i] = "2"; break;
-          case "В": translation[i] = "2"; break;
-          case "Г": translation[i] = "3"; break;
-          case "Д": translation[i] = "4"; break;
-          case "Е": translation[i] = "-"; break;
-          case "Ё": translation[i] = "-"; break;
-          case "Ж": translation[i] = "-"; break;
-          case "З": translation[i] = "7"; break;
-          case "И": translation[i] = "10"; break;
-          case "Й": translation[i] = "10"; break;
-          case "К": translation[i] = "20"; break;
-          case "Л": translation[i] = "3"; break;
-          case "М": translation[i] = "4"; break;
-          case "Н": translation[i] = "5"; break;
-          case "О": translation[i] = "6"; break;
-          case "П": translation[i] = "8"; break;
-          case "Р": translation[i] = "20"; break;
-          case "С": translation[i] = "6"; break;
-          case "Т": translation[i] = "9"; break;
-          case "У": translation[i] = "6"; break;
-          case "Ф": translation[i] = "8"; break;
-          case "Х": translation[i] = "5"; break;
-          case "Ц": translation[i] = "9"; break;
-          case "Ч": translation[i] = "8"; break;
-          case "Ш": translation[i] = "3"; break;
-          case "Щ": translation[i] = "3"; break;
-          case "Ъ": translation[i] = "-"; break;
-          case "Ы": translation[i] = "-"; break;
-          case "Ь": translation[i] = "-"; break;
-          case "Э": translation[i] = "-"; break;
-          case "Ю": translation[i] = "-"; break;
-          case "Я": translation[i] = "-"; break;
-          default: translation[i] = "-";
-        }         
-        
-      }
-        document.getElementById("tf").value = translation;
-
-      } else if (document.a.s.value == "s5"){ // Солнце
-         
-
-        for(var i = 0; i < word.length; i++) {
-        letters[i] = word[i];      
-        switch (letters[i]){
-          case "А": translation[i] = "1"; break;
-          case "Б": translation[i] = "2"; break;
-          case "В": translation[i] = "2"; break;
-          case "Г": translation[i] = "3"; break;
-          case "Д": translation[i] = "4"; break;
-          case "Е": translation[i] = "-"; break;
-          case "Ё": translation[i] = "-"; break;
-          case "Ж": translation[i] = "-"; break;
-          case "З": translation[i] = "7"; break;
-          case "И": translation[i] = "10"; break;
-          case "Й": translation[i] = "10"; break;
-          case "К": translation[i] = "20"; break;
-          case "Л": translation[i] = "30"; break;
-          case "М": translation[i] = "4"; break;
-          case "Н": translation[i] = "5"; break;
-          case "О": translation[i] = "6"; break;
-          case "П": translation[i] = "8"; break;
-          case "Р": translation[i] = "20"; break;
-          case "С": translation[i] = "6"; break;
-          case "Т": translation[i] = "9"; break;
-          case "У": translation[i] = "6"; break;
-          case "Ф": translation[i] = "8"; break;
-          case "Х": translation[i] = "5"; break;
-          case "Ц": translation[i] = "9"; break;
-          case "Ч": translation[i] = "8"; break;
-          case "Ш": translation[i] = "30"; break;
-          case "Щ": translation[i] = "30"; break;
-          case "Ъ": translation[i] = "-"; break;
-          case "Ы": translation[i] = "-"; break;
-          case "Ь": translation[i] = "-"; break;
-          case "Э": translation[i] = "-"; break;
-          case "Ю": translation[i] = "-"; break;
-          case "Я": translation[i] = "-"; break;
-          default: translation[i] = "-";
-        }         
-        
-      }
-        document.getElementById("tf").value = translation;
-
-      } else if (document.a.s.value == "s6"){ // Венеры
-         
-
-        for(var i = 0; i < word.length; i++) {
-        letters[i] = word[i];      
-        switch (letters[i]){
-          case "А": translation[i] = "1"; break;
-          case "Б": translation[i] = "2"; break;
-          case "В": translation[i] = "2"; break;
-          case "Г": translation[i] = "3"; break;
-          case "Д": translation[i] = "4"; break;
-          case "Е": translation[i] = "-"; break;
-          case "Ё": translation[i] = "-"; break;
-          case "Ж": translation[i] = "-"; break;
-          case "З": translation[i] = "7"; break;
-          case "И": translation[i] = "10"; break;
-          case "Й": translation[i] = "10"; break;
-          case "К": translation[i] = "20"; break;
-          case "Л": translation[i] = "30"; break;
-          case "М": translation[i] = "40"; break;
-          case "Н": translation[i] = "5"; break;
-          case "О": translation[i] = "6"; break;
-          case "П": translation[i] = "8"; break;
-          case "Р": translation[i] = "20"; break;
-          case "С": translation[i] = "6"; break;
-          case "Т": translation[i] = "9"; break;
-          case "У": translation[i] = "6"; break;
-          case "Ф": translation[i] = "8"; break;
-          case "Х": translation[i] = "5"; break;
-          case "Ц": translation[i] = "9"; break;
-          case "Ч": translation[i] = "8"; break;
-          case "Ш": translation[i] = "30"; break;
-          case "Щ": translation[i] = "30"; break;
-          case "Ъ": translation[i] = "-"; break;
-          case "Ы": translation[i] = "-"; break;
-          case "Ь": translation[i] = "-"; break;
-          case "Э": translation[i] = "-"; break;
-          case "Ю": translation[i] = "-"; break;
-          case "Я": translation[i] = "-"; break;
-          default: translation[i] = "-";
-        }         
-        
-      }
-        document.getElementById("tf").value = translation;
-
-      } else if (document.a.s.value == "s7"){ // Меркурия
-         
-
-        for(var i = 0; i < word.length; i++) {
-        letters[i] = word[i];      
-        switch (letters[i]){
-          case "А": translation[i] = "1"; break;
-          case "Б": translation[i] = "2"; break;
-          case "В": translation[i] = "2"; break;
-          case "Г": translation[i] = "3"; break;
-          case "Д": translation[i] = "4"; break;
-          case "Е": translation[i] = "-"; break;
-          case "Ё": translation[i] = "-"; break;
-          case "Ж": translation[i] = "-"; break;
-          case "З": translation[i] = "7"; break;
-          case "И": translation[i] = "10"; break;
-          case "Й": translation[i] = "10"; break;
-          case "К": translation[i] = "20"; break;
-          case "Л": translation[i] = "30"; break;
-          case "М": translation[i] = "40"; break;
-          case "Н": translation[i] = "50"; break;
-          case "О": translation[i] = "6"; break;
-          case "П": translation[i] = "8"; break;
-          case "Р": translation[i] = "20"; break;
-          case "С": translation[i] = "60"; break;
-          case "Т": translation[i] = "9"; break;
-          case "У": translation[i] = "6"; break;
-          case "Ф": translation[i] = "8"; break;
-          case "Х": translation[i] = "5"; break;
-          case "Ц": translation[i] = "9"; break;
-          case "Ч": translation[i] = "8"; break;
-          case "Ш": translation[i] = "30"; break;
-          case "Щ": translation[i] = "30"; break;
-          case "Ъ": translation[i] = "-"; break;
-          case "Ы": translation[i] = "-"; break;
-          case "Ь": translation[i] = "-"; break;
-          case "Э": translation[i] = "-"; break;
-          case "Ю": translation[i] = "-"; break;
-          case "Я": translation[i] = "-"; break;
-          default: translation[i] = "-";
-        }         
-        
-      }
-        document.getElementById("tf").value = translation;
-
-      } else if (document.a.s.value == "s8"){ // Луна
-         
-
-        for(var i = 0; i < word.length; i++) {
-        letters[i] = word[i];      
-        switch (letters[i]){
-          case "А": translation[i] = "1"; break;
-          case "Б": translation[i] = "2"; break;
-          case "В": translation[i] = "2"; break;
-          case "Г": translation[i] = "3"; break;
-          case "Д": translation[i] = "4"; break;
-          case "Е": translation[i] = "-"; break;
-          case "Ё": translation[i] = "-"; break;
-          case "Ж": translation[i] = "-"; break;
-          case "З": translation[i] = "7"; break;
-          case "И": translation[i] = "10"; break;
-          case "Й": translation[i] = "10"; break;
-          case "К": translation[i] = "20"; break;
-          case "Л": translation[i] = "30"; break;
-          case "М": translation[i] = "40"; break;
-          case "Н": translation[i] = "50"; break;
-          case "О": translation[i] = "6"; break;
-          case "П": translation[i] = "80"; break;
-          case "Р": translation[i] = "20"; break;
-          case "С": translation[i] = "60"; break;
-          case "Т": translation[i] = "9"; break;
-          case "У": translation[i] = "6"; break;
-          case "Ф": translation[i] = "80"; break;
-          case "Х": translation[i] = "5"; break;
-          case "Ц": translation[i] = "9"; break;
-          case "Ч": translation[i] = "8"; break;
-          case "Ш": translation[i] = "30"; break;
-          case "Щ": translation[i] = "30"; break;
-          case "Ъ": translation[i] = "-"; break;
-          case "Ы": translation[i] = "-"; break;
-          case "Ь": translation[i] = "-"; break;
-          case "Э": translation[i] = "-"; break;
-          case "Ю": translation[i] = "-"; break;
-          case "Я": translation[i] = "-"; break;
-          default: translation[i] = "-";
-        }         
-        
-      }
-        document.getElementById("tf").value = translation;
-      } 
+		
+	</section>
 
 
+	<section id="bottom" class="contact">
+		<h3 class="title">Запись на курс</h3>	
+		<p>Для записи на курс, обращайтесь ко мне в личные сообщения <a href="https://vk.com/magalmarel">Вконтакте</a>  или на почту magalmarel@gmail.com </p>
+		<hr>
 
+		<form>
+			<input type="email" placeholder="Email">
+			<a href="#" class="btn">Отправить заявку</a>
+		</form>
+	</section>
 
-    }
-      
-      
-      
-    
-}
-    
-  </script> 
-    
+	<footer>
+		<ul>
+			<li><a href="#"><i class="fa fa-twitter-square"></i></a></li>
+			<li><a href="#"><i class="fa fa-facebook-square"></i></a></li>
+			<li><a href="#"><i class="fa fa-snapchat-square"></i></a></li>
+			<li><a href="#"><i class="fa fa-pinterest-square"></i></a></li>
+			<li><a href="#"><i class="fa fa-github-square""></i></a></li>
+		</ul>
+		<p>Made by <a href="http://tutorialzine.com/" target="_blank">tutorialzine</a>. images courtesy to <a href="http://unsplash.com/" target="_blank">unsplash</a>.</p>
+		<p>No attribution required. you can remove this footer.</p>
+	</footer>
 
-  </head>  
-  <body>
+</body>
 
-  <div class="centerButton" align="center">
-
-  <button style="font-face: 'Comic Sans MS'; border: 2px solid; border-color: #6495ED #6495ED #6495ED; border-radius: 0px; width: 194px; color: white; background-color: #6495ED"> Перевод для сигил</button>     
-
-
-  <a href="https://occultist888.github.io/Rune.html"><button style="font-face: 'Comic Sans MS'; border: 2px solid; border-color: #A9A9A9 #A9A9A9 #A9A9A9; width: 194px; border-radius: 0px;color: white; background-color: #A9A9A9"> Перевод для рун</button></a>  
-</a>  
-</div>
-  
-  <div class="center" align="center">
-
-    
-      <div align="center">
-      <b>Перевод слов в цифры для составления сигил</b><p></p>
-      </div>
-      <form name="a">
-
-      
-      <select  class="search" name="s" onchange="tableTransform(); trans();">
-      <option selected value="s1">Квадрат Форда</option>
-      <option value="s2">Квадрат Сатурна</option> 
-      <option value="s3">Квадрат Юпитера</option> 
-      <option value="s4">Квадрат Марса</option> 
-      <option value="s5">Квадрат Солнца</option> 
-      <option value="s6">Квадрат Венеры</option> 
-      <option value="s7">Квадрат Меркурия</option> 
-      <option value="s8">Квадрат Луны</option> 
-      </select>
-      
-
-
-      <p>  
-      <input class="search" name="b" size = "28"  height = "50" placeholder=" Введите текст для перевода" onblur="this.value=this.value.toUpperCase();">
-      </p>
-      <div class="blocks" align="justify">
-      <input type="checkbox" id = "ch" name="check" onclick="checkbox();"> Убрать повторы символов &#160      
-      </div>
-      <div class="blocks" align="justify">
-      <input type="button" style="font-face: 'Comic Sans MS'; border: 2px solid; border-color: #6495ED #6495ED #6495ED; width: 135px; border-radius: 0px;color: white; background-color: #6495ED" value="Перевести"  onclick="trans();">      
-      </div>
-      <div>
-      <p>      
-      <input class="search" id = "tf" size = "28"  placeholder=" Здесь будет ваш перевод" value="" disabled="">
-      </p>
-      </form>
-<div align="justify"> <i>*буквы, которые не используются для составления сигилы отмечаются как "-", это обусловлено тем, что сигилы основываются на еврейском алфавите, в котором нет некоторых привычных нам букв и звуков (например, "е", "я", "э", "ы", "ь" и некоторых других)</i></div>
-
-
-<p>
-<table id="t" align="center" border="1" width="35%" height="10%" cellpadding="10" cellspacing = "0">
-   <tr>
-    <th>1</th>
-    <th>4</th>
-    <th>7</th>
-   </tr>
-   <tr>
-    <th>2</th>
-    <th>5</th>
-    <th>8</th>
-  </tr>
-  <tr>
-    <th>3</th>
-    <th>6</th>
-    <th>9</th>
-  </tr>
- </table>
-</p>
-<div align="justify" id="text">Квадрат Форда можно использовать для быстрого получения денег либо для медленного, но верного финансового роста.</div>
-
-</div>
-  </body>
 </html>
