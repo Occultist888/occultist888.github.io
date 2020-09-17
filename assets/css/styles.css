@@ -144,12 +144,14 @@ header nav li:last-child{
 		flex-direction: column;
 	}
 	header h2{
-		margin-bottom: 15px;
+		margin-bottom: 30px;
 
 	}
 
 	.logo{
-		font-size: 0px; /*убирает текст под лого*/
+
+		display: none;
+		/*font-size: 0px; убирает текст под лого*/
 	}
 
 	
@@ -163,7 +165,7 @@ header nav li:last-child{
 	}
 
 	header h2{
-		margin-bottom: 15px;
+		margin-bottom: 30px;
 	}
 
 	.logo{
