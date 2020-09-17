@@ -95,12 +95,19 @@
 		<p>Для записи на курс, обращайтесь ко мне в личные сообщения <a class="vklink" href="https://vk.com/magalmarel">Вконтакте</a>  или на почту magalmarel@gmail.com </p>
 		<hr>
 
-		<!--
+		
 		<form>
-			<input type="email" placeholder="Email">
-			<a href="#" class="btn">Отправить заявку</a>
-		</form>-->
+			<a href="https://vk.com/magalmarel" class="btn" id="btnvk">Написать Вконтакте</a>
+			<a onclick="myFunction();" class="btn" id="btnmail">Скопировать Email</a>
+			
+		</form>
 	</section>
+<script type="text/javascript">
+	function myFunction() {
+  navigator.clipboard.writeText('magalmarel@gmail.com')
+  alert("Скопировал адрес почты Альмаралея: magalmarel@gmail.com");
+}
+</script>
 
 	<footer>
 		<ul>

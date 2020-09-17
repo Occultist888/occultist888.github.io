@@ -49,6 +49,32 @@ a.btn{
 	text-align: center;
 }
 
+#btnvk{
+
+	color: #fff;
+	border-radius: 4px;
+	text-transform: uppercase;
+	background-color: #4c75a3;
+	font-weight: 800;
+	text-align: center;
+
+
+}
+
+#btnmail{
+
+	color: #fff;
+	border-radius: 4px;
+	text-transform: uppercase;
+	background-color: #A9A9A9;
+	font-weight: 800;
+	text-align: center;
+
+
+}
+
+
+
 
 hr{
 	width: 150px;
@@ -450,8 +476,11 @@ header nav li:last-child{
 	color: #555;
 }
 
+
+
 .contact form .btn{
 	padding: 18px 42px;
+	margin: 10px; 
 }
 
 
@@ -524,3 +553,5 @@ footer p a{
 @media (max-width: 1200px) {
 	#bsaHolder{ display:none;}
 }
+
+
