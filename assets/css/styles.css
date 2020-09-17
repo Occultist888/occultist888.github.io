@@ -148,6 +148,12 @@ header nav li:last-child{
 
 	}
 
+	header nav li{
+		margin: 0 5px;
+	}
+
+
+
 	.logo{
 
 		display: none;
@@ -166,6 +172,10 @@ header nav li:last-child{
 
 	header h2{
 		margin-bottom: 30px;
+	}
+
+	header nav li{
+		margin: 0 5px;
 	}
 
 	.logo{
