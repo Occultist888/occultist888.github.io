@@ -541,7 +541,7 @@ footer{
 footer ul{
 	display: flex;
 	margin-bottom: 25px;
-	font-size: 32px;
+	font-size: 50px;
 }
 
 footer ul li{
@@ -585,9 +585,7 @@ footer p a{
 @media (max-width: 390px){
 
 	section{
-		padding: 20px 20px;
-		width: 100%;
-		max-width: 380px;
+		padding-top: 50px;
 
 	}
 
