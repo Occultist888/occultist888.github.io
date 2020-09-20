@@ -45,7 +45,7 @@ a.btn{
 	border-radius: 4px;
 	text-transform: uppercase;
 	background-color: #2196F3;
-	font-weight: 800;
+	font-weight: 500;
 	text-align: center;
 }
 
@@ -55,7 +55,7 @@ a.btn{
 	border-radius: 4px;
 	text-transform: uppercase;
 	background-color: #4c75a3;
-	font-weight: 800;
+	font-weight: 500;
 	text-align: center;
 
 
@@ -67,7 +67,7 @@ a.btn{
 	border-radius: 4px;
 	text-transform: uppercase;
 	background-color: #A9A9A9;
-	font-weight: 800;
+	font-weight: 500;
 	text-align: center;
 
 
@@ -110,20 +110,25 @@ section{
 
 section h3.title{
 	color: #414a4f;
-	/*text-transform: capitalize; отвечает за заглавные буквы в каждом слове*/ 
-	font: bold 32px 'Roboto', sans-serif;
+	/*text-transform: capitalize; отвечает за заглавные буквы в каждом слове*/
+	font: 42px 'Roboto', sans-serif;
+	font-weight: 600;
 	margin-bottom: 35px;
 	text-align: center;
+
 }
 
 section p{
 	max-width: 800px;
-	text-align: center;
 	margin-bottom: 35px;
 	padding: 0 20px;
 	line-height: 2;
 
-	font: 25px 'Roboto', sans-serif;
+	font: 32px 'Roboto', sans-serif;
+	font-weight: 300;
+	text-align: center;
+
+
 
 }
 
@@ -154,6 +159,7 @@ header{
 
 header h1{
 	font-family: 'Roboto', sans-serif;
+
 }
 
 header h2{
@@ -165,20 +171,24 @@ header nav{
 }
 
 header nav li{
+	font-family: 'Roboto', sans-serif;
 	font-size: 20px;
+	font-weight: 300;
 	margin: 0 15px;
 }
 
 header nav li:first-child{
-	margin-left: 0;	
+	margin-left: 0;
 }
 
 header nav li:last-child{
-	margin-right: 0;	
+	margin-right: 0;
 }
 
 .logo{
+	font-family: 'Roboto', sans-serif;
 	font-size: 16px;
+	font-weight: 300;
 	text-transform: uppercase;
 
 }
@@ -205,18 +215,18 @@ header nav li:last-child{
 	.logo{
 
 		font-size: 0px;
-		
+
 	}
 
-	
 
-	
+
+
 }
 
 
 @media (max-width: 700px){
 	header{
-		flex-direction: column;	
+		flex-direction: column;
 
 	}
 
@@ -228,7 +238,7 @@ header nav li:last-child{
 		/*font-size: 15px;
 		margin: 0 5px;*/
 		display: none;
-	
+
 	}
 
 	.logo{
@@ -236,6 +246,14 @@ header nav li:last-child{
 
 		/*display: none; убирает лого*/
 	}
+}
+
+@media (max-width: 390px){
+
+	.contact p{
+		font-size: 25px;
+	}
+
 }
 
 
@@ -281,15 +299,20 @@ header nav li:last-child{
 }
 
 .hero h1{
+
+		font-family: 'Roboto', sans-serif;
 		font-size: 48px;
-		font-weight: 500;
+		font-weight: 700;
+		color: yellow;
 
 		text-transform: uppercase;
 		margin-top: 50px;
 	}
 
 .hero h3{
-	font:  28px 'Roboto', sans-serif;
+	font-family: 'Roboto', sans-serif;
+	font-size: 28px;
+	font-weight: 300;
 	margin-top: 20px;
 }
 
@@ -306,19 +329,19 @@ header nav li:last-child{
 
 	.hero h1{
 		font-size: 48px;
-		
+
 	}
 
 	.hero h3{
 		font-size: 24px;
-		
-		
+
+
 	}
 
 	.hero a.btn{
-		
 
-		
+
+
 	}
 
 }
@@ -491,7 +514,7 @@ header nav li:last-child{
 
 .contact form .btn{
 	padding: 18px 42px;
-	margin: 10px; 
+	margin: 10px;
 }
 
 
@@ -503,6 +526,9 @@ header nav li:last-child{
 	}
 
 }
+
+
+
 
 
 
@@ -528,15 +554,15 @@ footer ul{
 }
 
 footer ul li{
-	margin: 0 8px;	
+	margin: 0 8px;
 }
 
 footer ul li:first-child{
-	margin-left: 0;	
+	margin-left: 0;
 }
 
 footer ul li:last-child{
-	margin-right: 0;	
+	margin-right: 0;
 }
 
 footer p{
