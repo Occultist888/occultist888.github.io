@@ -11,7 +11,8 @@
 	<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.6.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="assets/css/styles.css">
-    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet"> <!--отображение иконок на гите-->
 
 
 
@@ -50,6 +51,48 @@
 			<li class="small" style="background-image: url(assets/img/mountain.jpg);"></li>
 		</div>-->
 	</section>
+
+
+
+
+<section class="qna">
+<h3 class="title">Вопрос-Ответ</h3>
+
+<button class="accordion">Могу ли я пройти обучение, не имея профиля ВКонтакте?</button>
+<div class="panel">
+  <p>Да, обучение точно также можно полностью пройти через электронную почту, для этого напишите мне на magalmarel@gmail.com</p>
+</div>
+
+<button class="accordion">Все ли могут обучиться Магии? Нужны ли врожденные способности?</button>
+<div class="panel">
+  <p>Магия - это 90% труда и лишь 10% таланта. При наличии желания, магии может обучиться каждый, кто готов ежедневно практиковаться и не сходить с намеченного пути, врожденные способности не обязательны.</p>
+</div>
+
+<button class="accordion">Есть ли возрастные ограничения для обучения?</button>
+<div class="panel">
+  <p>Да, я обучаю лишь людей, достигших 25 лет. Это ограничение нужно для вашей же безопасности и никаких исключений оно не предполагает. Записываясь на обучение, вы подтверждаете, что достигли этого возраста.</p>
+</div>
+
+</section>
+
+<script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.display === "block") {
+      panel.style.display = "none";
+    } else {
+      panel.style.display = "block";
+    }
+  });
+}
+</script>
+
+
 
 
 	<section class="features">
