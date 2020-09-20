@@ -140,6 +140,8 @@ ul.grid{
 }
 
 
+
+
 /*-------------
  	Header
 -------------*/
@@ -247,17 +249,6 @@ header nav li:last-child{
 		/*display: none; убирает лого*/
 	}
 }
-
-@media (max-width: 390px){
-
-	.contact p{
-		font-size: 25px;
-	}
-
-}
-
-
-
 
 /*----------------
  	Hero Section
@@ -589,6 +580,31 @@ footer p a{
 
 @media (max-width: 1200px) {
 	#bsaHolder{ display:none;}
+}
+
+@media (max-width: 390px){
+
+	section{
+		padding: 20px 20px;
+		width: 100%;
+		max-width: 380px;
+
+	}
+
+	section p{
+
+		font-size: 21px;
+	}
+
+	.hero h1{
+		font-size: 25px;
+	}
+
+
+	.contact p{
+		font-size: 25px;
+	}
+
 }
 
 
