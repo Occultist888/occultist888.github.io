@@ -399,11 +399,9 @@ header nav li:last-child{
   transition: 0.4s;
 }
 
-.accordion img{
-
-
-
-	}
+.accordion i{
+    color: #2196F3;
+}
 
 .active, .accordion:hover {
   background-color: #ccc;
