@@ -56,17 +56,17 @@
 	<section class="qna">
 <h3 class="title">Вопрос-Ответ</h3>
 
-<button class="accordion" value="1"><i id="arrow1" class="fa fa-arrow-down"></i> Могу ли я пройти обучение, не имея профиля ВКонтакте?</button>
+<button class="accordion" value="1"><div style="float:left; width: 10%"><i id="arrow1" class="fa fa-plus"></i></div><div style="float:left; width: 90%;">Могу ли я пройти обучение, не имея профиля ВКонтакте?</div></button>
 <div class="panel">
   <p> Да, обучение точно также можно полностью пройти через электронную почту, для этого напишите мне на magalmarel@gmail.com</p>
 </div>
 
-<button class="accordion" value="2"><i id="arrow2" class="fa fa-arrow-down"></i> Все ли могут обучиться Магии? Нужны ли врожденные способности?</button>
+<button class="accordion" value="2"><div style="float:left; width: 10%"><i id="arrow2" class="fa fa-plus"></i></div><div style="float:left; width: 90%;">Все ли могут обучиться Магии? Нужны ли врожденные способности?</button>
 <div class="panel">
   <p>Магия - это 90% труда и лишь 10% таланта. При наличии желания, магии может обучиться каждый, кто готов ежедневно практиковаться и не сходить с намеченного пути, врожденные способности не обязательны.</p>
 </div>
 
-<button class="accordion" value="3"><i id="arrow3" class="fa fa-arrow-down"></i> Есть ли возрастные ограничения для обучения?</button>
+<button class="accordion" value="3"><div style="float:left; width: 10%"><i id="arrow3" class="fa fa-plus"></i></div><div style="float:left; width: 90%;">Есть ли возрастные ограничения для обучения?</button>
 <div class="panel">
   <p>Да, я обучаю лишь людей, достигших 25 лет. Это ограничение нужно для вашей же безопасности и никаких исключений оно не предполагает. Записываясь на обучение, вы подтверждаете, что достигли этого возраста.</p>
 </div>
@@ -84,10 +84,10 @@ for (i = 0; i < acc.length; i++) {
     var i = this.value;
     if (panel.style.display === "block") {
       panel.style.display = "none";
-      document.getElementById('arrow'+i).className = "fa fa-arrow-down";
+      document.getElementById('arrow'+i).className = "fa fa-plus";
     } else {
       panel.style.display = "block";
-      document.getElementById('arrow'+i).className = "fa fa-arrow-up";
+      document.getElementById('arrow'+i).className = "fa fa-minus";
     }
   });
 }

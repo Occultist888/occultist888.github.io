@@ -383,6 +383,7 @@ header nav li:last-child{
 .qna{
 		padding: 0;
 		margin-bottom: 50px;
+
 	}
 
 .accordion {
@@ -397,6 +398,7 @@ header nav li:last-child{
   outline: none;
   font-size: 25px;
   transition: 0.4s;
+
 }
 
 .accordion i{
