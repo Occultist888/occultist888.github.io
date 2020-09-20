@@ -387,9 +387,7 @@ header nav li:last-child{
 
 .accordion {
 	max-width: 980px;
-background: rgb(255,255,255);
-background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 0%, rgba(238,238,238,1) 100%);
-  color: #444;
+	background-color: #eee;
   cursor: pointer;
   padding: 18px;
   width: 100%;
