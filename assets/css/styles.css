@@ -401,6 +401,12 @@ background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 
   transition: 0.4s;
 }
 
+.accordion img{
+
+
+
+	}
+
 .active, .accordion:hover {
   background-color: #ccc;
 
