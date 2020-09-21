@@ -8,13 +8,16 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
   <script type="text/javascript">
 
+    var quality = "/1920/1080?random="
+
     function update () {
 
       document.getElementById('Loadweel').style.display = "block";
 
       var n = document.getElementById('Btn').value;
       
-      document.getElementById('Img').src = "http://picsum.photos/1920/1080?random=" + n;
+      document.getElementById('Img').src = "http://picsum.photos" + quality + n;
+
       /*alert(document.getElementById('Img').src);*/
       document.getElementById('Btn').value = Number(document.getElementById('Btn').value) + 1;
       document.getElementById('Btn').innerText = "Обновить изображение (" + n +")";
@@ -37,6 +40,44 @@
     function loadingoff (){
 
         document.getElementById('Loadweel').style.display = "none";
+
+    }
+
+    function qualitychange(){
+      
+      var q = document.getElementById('Btn2').value;
+
+      if (q == 1){
+
+        document.getElementById('Btn2').innerText = "Качество хорошее (720p)";
+        document.getElementById('Btn2').value = 2;
+        quality = "/1280/720?random=";
+
+      }
+      if (q == 2){
+
+        document.getElementById('Btn2').innerText = "Качество среднее (480p)";
+        document.getElementById('Btn2').value = 3;
+        quality = "/854/480?random=";
+
+      }
+      if (q == 3) {
+        document.getElementById('Btn2').innerText = "Качество низкое (360p)";
+        document.getElementById('Btn2').value = 4;
+        quality = "/640/360?random=";
+        
+      }
+
+      if (q == 4) {
+        document.getElementById('Btn2').innerText = "Качество отличное (1080p)";
+        document.getElementById('Btn2').value = 1;
+        quality = "/1920/1080?random=";
+        
+      }
+
+
+
+      
 
     }
 
@@ -109,7 +150,7 @@
         box-shadow: 0 -3px rgb(53,167,110) inset;
         transition: 0.2s;
     }
-    
+
     @media screen and (max-width: 1200px) {
         #Btn {
           font-size: 5vw;
@@ -122,6 +163,35 @@
     #Btn:active {
         background: rgb(33,147,90);
         box-shadow: 0 3px rgb(33,147,90) inset;
+}
+
+
+#Btn2 {
+        
+        width: 980px;
+        max-width:100%;
+        font-size: 20px;
+        color: black;
+        text-decoration: none;
+        padding: .8em 1em calc(.8em + 3px);
+        border-radius: 3px;
+        background: rgb(244, 244, 244);
+        box-shadow: 0 -3px rgb(218, 218, 218) inset;
+        transition: 0.2s;
+    }
+
+    @media screen and (max-width: 1200px) {
+        #Btn2 {
+          font-size: 5vw;
+        }
+
+    }
+
+
+    #Btn2:hover { background: rgb(218, 218, 218); }
+    #Btn2:active {
+        background: rgb(207, 207, 207);
+        box-shadow: 0 3px rgb(218, 218, 218) inset;
 }
 
     
@@ -140,6 +210,7 @@
           <img id="Img" src="http://picsum.photos/1920/1080?random=0" onclick="coverup();" onload="loadingoff();">
         </div>
         <button id="Btn" onclick="update();" value="1">Обновить изображение</button>
+        <button id="Btn2" onclick="qualitychange();" value="1">Качество отличное (1080p)</button>
         
       
     </center>
