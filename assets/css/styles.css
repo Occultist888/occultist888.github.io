@@ -335,7 +335,70 @@ header nav li:last-child{
 
 }
 
+/*--------------------
+ 	Руны (Слайдер)
+---------------------*/
 
+.runesslider{
+
+	background-color: #f7f7f7;
+			
+}
+
+
+.runes{
+ 
+	font-size: 200px;
+
+}
+
+.btnrunes{
+
+	vertical-align: middle;
+
+	font-size: 70px;
+	width: 40px;
+	height: 70px;
+
+	color: #2196F3;
+	background-color: inherit;
+	border: none;
+
+	
+}
+
+.rune{
+
+	vertical-align: middle;
+
+	height: 200px;
+
+}
+
+.btnrngrune{
+	font-family: 'Roboto', sans-serif;
+	font-size: 18px;
+	font-weight: 300;
+	text-transform: uppercase;
+
+	color: white;
+	background-color: #2196F3;
+	padding: 20px;
+	border-radius: 5px;
+	border: inherit;
+
+	opacity: 0.9;
+	cursor: pointer;
+
+	margin-top: 50px;
+
+
+}
+
+
+.btnrngrune:hover{
+	opacity: 1;
+}
 
 /*--------------------
  	Our Work Section
@@ -381,8 +444,7 @@ header nav li:last-child{
 ----------------*/
 
 .qna{
-		padding: 0;
-		margin-bottom: 50px;
+		
 
 	}
 
@@ -393,11 +455,11 @@ header nav li:last-child{
   padding: 18px;
   width: 100%;
   border: none;
-
   text-align: left;
   outline: none;
   font-size: 25px;
   transition: 0.4s;
+  align-content: center;
 
 }
 
