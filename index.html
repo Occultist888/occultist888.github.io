@@ -85,6 +85,7 @@
   	<img class="rune" id="rune23" src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/70/Runic_letter_othalan.svg/800px-Runic_letter_othalan.svg.png">
   	<img class="rune" id="rune24" src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/26/Runic_letter_dagaz.svg/800px-Runic_letter_dagaz.svg.png">
 
+
   	
   <button class="btnrunes" id="btnright" onclick="plusDivs(1)">&#10095;</button>
 </div>
@@ -96,6 +97,7 @@
 <script>
 var slideIndex = 1;
 showDivs(slideIndex);
+
 
 function plusDivs(n) {
   showDivs(slideIndex += n);
@@ -111,9 +113,17 @@ function showDivs(n) {
   }
   x[slideIndex-1].style.display = "inline-block";  
 }
- function rngRune(){
- 	a = Math.floor(Math.random() * Math.floor(24));
- 	plusDivs(a);
+
+
+
+function rngRune(){
+	
+ 	slideIndex = Math.floor(Math.random() * Math.floor(24));
+ 	showDivs(slideIndex);
+ 	alert(slideIndex);
+ 	
+
+ 	
  }
 </script>
 
