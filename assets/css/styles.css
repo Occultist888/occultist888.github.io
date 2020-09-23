@@ -11,10 +11,13 @@
 }
 
 html{
+
+
 	font-family: 'Roboto', sans-serif;
 	font:  16px sans-serif;
 	color: #555;
 }
+
 
 ul, nav{
 	list-style: none;
@@ -260,6 +263,8 @@ header nav li:last-child{
 	text-align: center;
 }
 
+
+
 .hero .background-image{
 	position: absolute;
 	top: 0;
@@ -269,7 +274,13 @@ header nav li:last-child{
 	background-size: cover;
 	background-color: #2196F3;
 	z-index: -1;
+
+	background-attachment: fixed; /*эффект параллакс*/
+	
+	
 }
+
+
 
 .hero .background-image:after{
 	content: '';
@@ -280,6 +291,7 @@ header nav li:last-child{
 	height: 100%;
 	background-color: #414a4f;
 	opacity: 0.75;
+	
 }
 
 .font{
@@ -342,13 +354,40 @@ header nav li:last-child{
 .runesslider{
 
 	background-color: #f7f7f7;
-			
+	background-image: url("../img/stone.jpg");
+	background-repeat: repeat;
+	box-shadow: inset 0 150px 150px  -150px black , inset 0 -150px 150px  -150px black;
+ 	
+
 }
+
+.runesslider p{
+
+	color: white;
+	font-size: 20px;
+	text-shadow:  2px 3px 2px black;
+
+	}
+
+.advice{
+
+	color: #2196F3;
+	font-size: 200px;
+
+	}
+
 
 
 .runes{
- 
+
+	
+
+
+
 	font-size: 200px;
+	font-color: white;
+
+	
 
 }
 
@@ -356,13 +395,21 @@ header nav li:last-child{
 
 	vertical-align: middle;
 
-	font-size: 70px;
+	font-size: 80px;
 	width: 40px;
-	height: 70px;
+	height: 80px;
 
-	color: #2196F3;
-	background-color: inherit;
+
+	
 	border: none;
+
+	background-color: #565656;
+  	color: transparent;
+  	text-shadow: 0px 2px 3px rgba(255,255,255,0.5);
+  	-webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+
 
 	
 }
@@ -372,6 +419,14 @@ header nav li:last-child{
 	vertical-align: middle;
 
 	height: 200px;
+	filter: invert(1);
+	
+	opacity: .5;
+
+
+
+
+	
 
 }
 
@@ -380,9 +435,11 @@ header nav li:last-child{
 	font-size: 18px;
 	font-weight: 300;
 	text-transform: uppercase;
+	
 
 	color: white;
 	background-color: #2196F3;
+	
 	padding: 20px;
 	border-radius: 5px;
 	border: inherit;
@@ -391,6 +448,13 @@ header nav li:last-child{
 	cursor: pointer;
 
 	margin-top: 50px;
+	margin-bottom: 50px;
+
+	
+
+
+  	
+    
 
 
 }
