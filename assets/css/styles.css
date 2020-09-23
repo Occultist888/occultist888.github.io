@@ -281,8 +281,8 @@ header nav li:last-child{
 	z-index: -1;
 
 	background-attachment: fixed; /*эффект параллакс*/
-	
-	
+
+
 }
 
 
@@ -296,7 +296,7 @@ header nav li:last-child{
 	height: 100%;
 	background-color: #414a4f;
 	opacity: 0.75;
-	
+
 }
 
 .font{
@@ -358,13 +358,17 @@ header nav li:last-child{
 
 .runesslider{
 
-	
-	background-image: url("../img/stone.jpg");
-	background-repeat: repeat;
 
-	
+	background-image: url("../img/stone.jpg");
+
+	background-repeat: no-repeat;
+    background-attachment: fixed;
+    -o-background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+
 	box-shadow: inset 0 150px 150px  -150px black , inset 0 -150px 150px  -150px black;
- 	
+
 
 }
 
@@ -393,14 +397,14 @@ header nav li:last-child{
 
 .runes{
 
-	
+
 
 
 
 	font-size: 200px;
 	font-color: white;
 
-	
+
 
 }
 
@@ -413,7 +417,7 @@ header nav li:last-child{
 	height: 80px;
 
 
-	
+
 	border: none;
 
 	background-color: #565656;
@@ -424,7 +428,7 @@ header nav li:last-child{
     background-clip: text;
 
 
-	
+
 }
 
 .rune{
@@ -433,13 +437,13 @@ header nav li:last-child{
 
 	height: 200px;
 	filter: invert(1);
-	
+
 	opacity: .5;
 
 
 
 
-	
+
 
 }
 
@@ -448,11 +452,11 @@ header nav li:last-child{
 	font-size: 18px;
 	font-weight: 300;
 	text-transform: uppercase;
-	
+
 
 	color: white;
 	background-color: #2196F3;
-	
+
 	padding: 20px;
 	border-radius: 5px;
 	border: inherit;
@@ -466,8 +470,8 @@ header nav li:last-child{
 
 
 
-  	
-    
+
+
 
 
 }
@@ -521,7 +525,7 @@ header nav li:last-child{
 ----------------*/
 
 .qna{
-		
+
 
 	}
 
@@ -779,11 +783,11 @@ footer p a{
 	}
 
 	.hero .background-image{
-	
+
 
 	background-attachment: scroll; /*эффект параллакс*/
-	
-	
+
+
 }
 
 	section{
@@ -805,10 +809,10 @@ footer p a{
 
 	.runesslider{
 
-	
-	
 
-	
+
+
+
 	}
 
 
