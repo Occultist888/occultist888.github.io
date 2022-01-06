@@ -65,7 +65,7 @@ a.btn{
 
 #btnvk{
 	color: #fff;
-	border-radius: 4px;
+	/*border-radius: 4px;*/
 	text-transform: uppercase;
 	background-color: #4c75a3;
 	font-weight: 500;
@@ -75,7 +75,7 @@ a.btn{
 
 #btnmail{
 	color: #fff;
-	border-radius: 4px;
+	/*border-radius: 4px;*/
 	text-transform: uppercase;
 	background-color: #A9A9A9;
 	font-weight: 500;
