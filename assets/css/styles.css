@@ -76,8 +76,10 @@ a.btn{
 #btnmail{
 	color: #fff;
 	border-radius: 4px;
+	border: 2px solid;
+	border-colour: #e2e2e2;
 	text-transform: uppercase;
-	background-color: #e2e2e2; /*#A9A9A9*/
+	/*background-color: #e2e2e2; /*#A9A9A9*/
 	font-weight: 500;
 	text-align: center;
 }
