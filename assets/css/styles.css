@@ -585,6 +585,7 @@ header nav li:last-child{
 
 .reviews{
 	background-color: #fff;
+	max-width: 800px;
 }
 
 .reviews .quote{
