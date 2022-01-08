@@ -6,6 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link type="image/x-icon" href="assets/img/favicon.png" rel="shortcut icon">
     <link type="Image/x-icon" href="assets/img/favicon.png" rel="icon">
+	<!-- Виджет отзывов VK -->
+    <script type="text/javascript" src="https://vk.com/js/api/openapi.js?169"></script>
+    <script type="text/javascript">
+    	VK.init({apiId: 8045679, onlyWidgets: true});
+    </script>
     <title>Курс Рунической Магии</title>
 
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
@@ -240,7 +245,12 @@ for (i = 0; i < acc.length; i++) {
 
 		<p class="quote">Благодарю за те знания что даёте. Все доступно и детально. А, главное, всегда знаешь что на любой вопрос будет ответ, доступный и чёткий.</p>
 		<p class="author">— <a href="https://vk.com/topic-161227869_38441446">Ирина Зазулинская</a></p>
-
+		
+		<!-- Вставка виджета комментариев VK -->
+		<div id="vk_comments"></div>
+		<script type="text/javascript">
+			VK.Widgets.Comments("vk_comments", {width:900, height: 500, limit: 3, attach: false});
+		</script>
 
 	</section>
 
